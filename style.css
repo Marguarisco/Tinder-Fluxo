@@ -1,0 +1,363 @@
+body,html{
+    height: 100%;
+}
+
+body{
+    display:flex;
+    flex-direction:row;
+}
+
+header{
+    width: 500px;
+}
+
+#esq_superior{
+    width: 100%;
+    height:80px;
+    background-image: linear-gradient(90deg,rgb(247, 60, 119),rgb(247, 85, 53));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#sub_circulo{ /* Semi circulo para conter a foto e o nome da Fluxo*/
+    width:180px;
+    height:40px;
+    padding: 4px;
+    border-radius: 30px;
+    background-color:rgb(228, 51, 86);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circulo{ /* Circulo para fazer como camada o logo da fluxo*/
+    width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+#logo{
+    display: block;
+    max-width:100%;
+}
+
+#nome_usuario{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: #FFFFFF
+}
+
+#icones_pequenos_caixa{ /* Caixa que agrupa os icones pequenos*/
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icone_pequeno_menu{ /* Para fazer o circulo no fundo dos icones pequenos*/
+    width: 30px;
+    height: 30px;
+    border-radius:15px;
+    background-color:rgb(250, 67, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#esq_inferior{
+    width: 100%;
+    height: 80%;
+}
+
+#caixa_esq_inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left:20px ;
+}
+
+h3{ /* Contém o cabeçalho do menu*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+h3:hover{ /* Para quando passar o mouse em cima*/
+    border-bottom: 4px solid rgb(253,63,91);
+    
+}
+
+#centro_menu{ /* Centro branco do menu que vai agrupar a pergunta, resposta e quadrado degrade*/
+    height: 100%;
+    width:75%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#quadrado_degrade{
+    height: 175px;
+    width: 110px;
+    background-image: linear-gradient(90deg,rgb(247, 60, 119),rgb(247, 85, 53));
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+#pergunta_pame{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+
+}
+
+#resposta_pame{
+    color:rgb(102, 102, 102);
+}
+
+main{
+    width: 100%;
+    margin: 0px auto;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(241, 241, 241);
+}
+
+#retangulo_central{ /* Retângulo central da página*/
+    overflow: hidden;
+    height: 550px;
+    width: 350px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: #000;
+
+}
+
+#rec_imagem{ /* Retângulo que contém como fundo a imagem do candidato*/
+    overflow: hidden;
+    height: 82%;
+    background: url("/assets/marcelle1.jpeg");
+    background-size: auto;
+    background-position-x: -50px;
+    background-position-y: -225px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+}
+
+#texto_info{ /* Div que contém toda a parte escrita do retângulo*/
+    font-family: Arial;
+    margin-left: 13px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+#nome_idade{ /* Contém o nome, idade e o checkmark numa unica div*/
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#circulo_azul{ /* Fazendo um circulo para ficar atrás do checkmark*/
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(23, 133, 252);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+
+
+}
+.checkmark { /* Criando um checkmark a partir de um L*/
+    font-family: arial;
+    font-size: 9px;
+    font-weight: bold;
+    transform: scaleX(-1) rotate(-40deg);
+    margin-right: 0.6px;
+
+    
+}
+
+h1{ /* Nome*/
+    font-size: 24px;
+    font-weight: bolder;
+
+}
+
+h4{ /* Idade*/
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.circulo_base{ /* Circulo base para novos circulos para evitar repetição*/
+	border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#online{ /* Div que contém o circulo online e a frase online recentemente*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+}
+    
+.circulo_base.menor{ /*Circulo verde para demonstrar o online*/
+    width: 7px;
+	height: 7px;
+    background-color: rgb(29, 248, 0);
+    margin-right: 5px;
+}
+
+#curso_periodo{ /* Div que contém a frase sobre o curso e período*/
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.circulo_base_informacao{ /* Circulo branco de fundo do i de informações*/
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    margin-right: 18px;
+
+}
+
+.simb_informacao{
+    font-family:Arial;
+    font-size: 9px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    margin-top: 1px;
+    margin-right: 0.5px;
+}
+
+#rec_botoes{ /* Div que agrupa os simbolos de interação com o usuário*/
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.simbolos{/* Div usado para organizar os botões*/
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+.simbolos li{ /* Para considerar que cada um item da lista é um bloco de tamanho a ser especificado*/
+    display: inline-block;
+    margin: 3px;
+    margin-top: 20px;
+}
+
+#voltar img{
+    border: 2px solid rgb(162, 162, 163);
+    width: 30px;
+    border-radius: 50%;
+    padding:12px;
+}
+
+#x img{
+    border:2px solid rgb(158, 20, 27);
+    width: 30px;
+    border-radius: 50%;
+    padding:16px
+}
+
+#estrela img{
+    border:2px solid rgb(23, 172, 206);
+    width: 30px;
+    border-radius: 50%;
+    padding:12px
+}
+
+#coracao img{
+    border:2px solid rgb(18, 180, 140);
+    width: 30px;
+    border-radius: 50%;
+    padding:16px
+}
+
+#raio img{
+    border:2px solid rgb(100, 13, 150);
+    width: 30px;
+    border-radius: 50%;
+    padding:12px;
+}
+
+#abaixo{ /* Feito para colocar os simbolos do teclado embaixo*/
+    margin-top: auto;
+    margin-bottom: 20px;
+    
+}
+
+#abaixo ul{
+    display: flex;
+    flex-direction: row;
+    color: rgb(143, 143, 143);
+}
+
+#abaixo li{
+    text-transform: uppercase;
+    font-family:Arial;
+    font-size: 10px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+#abaixo img{
+    filter:invert(60%);
+    margin-right: 5px;
+}
+
+#ocultar{
+    background-color: rgb(160, 160, 160);
+    border:2px solid rgb(173, 173, 173);
+    color:rgb(241, 241, 241) ;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 30px;
+}
+
+#backspace{
+    width:60px;
+    height:15px;
+    border-radius:15%;
+    border: 3px solid rgb(170, 170, 170)
+}
+
